@@ -1,14 +1,13 @@
 import styles from './VoteStats.module.css';
-import type { Votes } from '../../types/votes';
+import type { Votes } from '../../../types/votes';
 
-interface VoteStatsProps
-{
-  votes: Votes,
-  totalVotes: number
-  positiveRate: number
+interface VoteStatsProps {
+  votes: Votes;
+  totalVotes: number;
+  positiveRate: number;
 }
 
-function VoteStats({votes, totalVotes, positiveRate}:VoteStatsProps) {
+function VoteStats({ votes, totalVotes, positiveRate }: VoteStatsProps) {
   return (
     <div className={styles.container}>
       <p className={styles.stat}>
